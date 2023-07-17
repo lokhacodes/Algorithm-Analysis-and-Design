@@ -1,0 +1,41 @@
+#include <stdio.h>
+int i,j,v,e,m,n,s,b;
+int a[10][10];
+int main()
+{printf("Enter number of vertex: ");
+scanf("%d",&v);
+printf("Enter number of edge: ");
+scanf("%d",&e);
+for(i=1;i<=v;i++)
+{
+for(j=1;j<=v;j++)
+{
+a[i][j]=0;                                                                          Output
+}}
+
+for(i=1;i<=e;i++)
+{
+printf("Enter edges of Graphs:\n");                                  
+scanf("%d %d %d",&m,&n,&b);   
+a[m][n]=b;
+a[n][m]=b;
+}
+printf("Adjacency matrix of the graph :\n");
+printf("  ");
+for(j=1;j<=v;j++)
+{
+    printf("%d ",j);
+    }
+    printf("\n");
+for(i=1;i<=v;i++)
+{
+    printf("%d:",i);
+for(j=1;j<=v;j++)
+{
+printf("%d ",a[i][j]);
+}
+printf("\n");
+}
+return 0;
+}
+
